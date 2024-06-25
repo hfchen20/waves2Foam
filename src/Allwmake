@@ -63,7 +63,8 @@ then
     then
         (cd waves2FoamSampling  ; wmake libso)
     else
-        (cd waves2FoamSamplingNew  ; wmake libso)
+        #(cd waves2FoamSamplingNew  ; wmake libso)
+        echo "skip waves2FoamSamplingNew "
     fi
 else
     if [ "$WM_PROJECT_VERSION_NUMBER" -lt "400" ]

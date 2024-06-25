@@ -97,7 +97,8 @@ autoPtr<relaxationWeight> relaxationWeight::New
 
     }
 
-    dictionaryConstructorTable::iterator cstrIter =
+    // dictionaryConstructorTable::iterator cstrIter =
+    auto cstrIter =
         dictionaryConstructorTablePtr_->find
         (
             "relaxationWeight"+relaxationWeightTypeName

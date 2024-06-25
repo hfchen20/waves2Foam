@@ -107,7 +107,8 @@ autoPtr<celerityShapeFunctions> celerityShapeFunctions::New
     word formulation;
     sd.lookup("shapeFunction") >> formulation;
 
-    celerityShapeFunctionsConstructorTable::iterator cstrIter =
+    // celerityShapeFunctionsConstructorTable::iterator cstrIter =
+    auto cstrIter =
             celerityShapeFunctionsConstructorTablePtr_->find(formulation);
 
     if (cstrIter == celerityShapeFunctionsConstructorTablePtr_->end())

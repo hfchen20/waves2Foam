@@ -90,6 +90,8 @@ Notes
 #include "sampledSurfaceElevation.H"
 #include "uniformDimensionedFields.H"
 
+#include "gravityMeshObject.H"
+
 using namespace Foam;
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

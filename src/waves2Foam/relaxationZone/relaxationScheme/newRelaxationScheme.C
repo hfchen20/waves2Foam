@@ -60,7 +60,8 @@ autoPtr<relaxationScheme> relaxationScheme::New
         coeffDict_.lookup("relaxationScheme") >> relaxationSchemeTypeName;
     }
 
-    dictionaryConstructorTable::iterator cstrIter =
+    // dictionaryConstructorTable::iterator cstrIter =
+    auto cstrIter =
         dictionaryConstructorTablePtr_->find
         (
             "relaxationScheme"+relaxationSchemeTypeName

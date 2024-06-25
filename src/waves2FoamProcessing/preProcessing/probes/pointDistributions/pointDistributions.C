@@ -60,7 +60,8 @@ autoPtr<pointDistributions> pointDistributions::New
 {
     word pd( dict.lookup("pointDistribution") );
 
-    pointDistributionsConstructorTable::iterator cstrIter =
+    // pointDistributionsConstructorTable::iterator cstrIter =
+    auto cstrIter =
             pointDistributionsConstructorTablePtr_->find( pd );
 
     if (cstrIter == pointDistributionsConstructorTablePtr_->end())

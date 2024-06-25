@@ -5,7 +5,7 @@
 
 
 ## COMPILE THIRD PARTY DEPENDENCIES
-(cd ThirdParty; ./Allclean)
+#(cd ThirdParty; ./Allclean)
 
 
 ## LIBRARY

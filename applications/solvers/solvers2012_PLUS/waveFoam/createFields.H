@@ -89,7 +89,6 @@ autoPtr<transportModelType> turbulence
 volScalarField gh("gh", g & (mesh.C() - referencePoint));
 surfaceScalarField ghf("ghf", g & (mesh.Cf() - referencePoint));
 
-
 volScalarField p
 (
     IOobject

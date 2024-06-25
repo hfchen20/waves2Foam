@@ -301,7 +301,8 @@ autoPtr<setWaveProperties> setWaveProperties::New
     word waveTheoryTypeName;
     dict.lookup("waveType") >> waveTheoryTypeName;
 
-    setWavePropertiesConstructorTable::iterator cstrIter =
+    //setWavePropertiesConstructorTable::iterator cstrIter =
+    auto cstrIter =
         setWavePropertiesConstructorTablePtr_->find
         (
             waveTheoryTypeName+"Properties"

@@ -67,7 +67,8 @@ autoPtr<phases> phases::New
 {
     word phaseName = dict.lookupOrDefault<word>("phaseMethod","randomPhase");
 
-    phasesConstructorTable::iterator cstrIter =
+    // phasesConstructorTable::iterator cstrIter =
+    auto cstrIter =
             phasesConstructorTablePtr_->find(phaseName);
 
     if (cstrIter == phasesConstructorTablePtr_->end())

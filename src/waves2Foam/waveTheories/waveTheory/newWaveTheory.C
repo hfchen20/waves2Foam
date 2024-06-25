@@ -58,7 +58,8 @@ autoPtr<waveTheory> waveTheory::New
         coeffDict_.lookup("waveType") >> waveTheoryTypeName;
     }
 
-    dictionaryConstructorTable::iterator cstrIter =
+    // dictionaryConstructorTable::iterator cstrIter =
+    auto cstrIter =
         dictionaryConstructorTablePtr_->find(waveTheoryTypeName);
 
     if (cstrIter == dictionaryConstructorTablePtr_->end())

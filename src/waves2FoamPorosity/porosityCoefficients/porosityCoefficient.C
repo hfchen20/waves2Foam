@@ -104,7 +104,8 @@ autoPtr<porosityCoefficient> porosityCoefficient::New
     word poroForm = poroProp.lookup("resistanceFormulation");
 #endif
 
-    porosityCoefficientConstructorTable::iterator cstrIter =
+    // porosityCoefficientConstructorTable::iterator cstrIter =
+    auto cstrIter =
             porosityCoefficientConstructorTablePtr_->find(poroForm);
 
     if (cstrIter == porosityCoefficientConstructorTablePtr_->end())
